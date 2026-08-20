@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículum profesional de Johnny Alexander Nicolaz Rodríguez, ejecutivo comercial especializado en seguros, desarrollo de negocio y gestión de clientes.">
+  <meta name="theme-color" content="#0b6b63">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Johnny Nicolaz | Ejecutivo comercial de seguros">
+  <meta property="og:description" content="Economista con MBA y más de 15 años de trayectoria en seguros, venta consultiva, gestión de clientes y desarrollo de negocio.">
+  <link rel="canonical" href="https://proselcommalaga.github.io/johnny-nicolaz-cv/">
+  <title>Johnny Nicolaz | Ejecutivo comercial de seguros</title>
+  <style>
+    :root {
+      --ink: #17252d;
+      --muted: #52636d;
+      --paper: #f7fafb;
+      --surface: #ffffff;
+      --navy: #174a6a;
+      --teal: #0b6b63;
+      --line: #cbd8de;
+      --soft: #e9f1f3;
+      --focus: #b34700;
+      --signal: #f0bd5a;
+      --shadow: 0 18px 48px rgba(23, 74, 106, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(23, 74, 106, 0.035) 1px, transparent 1px) 0 0 / 28px 28px,
+        var(--paper);
+      font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    a { color: var(--navy); text-underline-offset: 0.2em; }
+    a:hover { color: var(--teal); }
+    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 2px; }
+
+    .skip-link {
+      position: fixed;
+      z-index: 10;
+      top: 0.75rem;
+      left: 0.75rem;
+      transform: translateY(-180%);
+      padding: 0.7rem 1rem;
+      color: #fff;
+      background: var(--ink);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .cv {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 2rem auto;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--teal);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(250px, 0.8fr);
+      gap: 2rem;
+      padding: clamp(2rem, 6vw, 4.75rem);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.15; }
+
+    h1 {
+      max-width: 13ch;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.65rem, 7vw, 5.7rem);
+      font-weight: 700;
+      letter-spacing: -0.045em;
+    }
+
+    .role {
+      max-width: 34ch;
+      margin: 1.4rem 0 0;
+      color: var(--navy);
+      font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .contact-card {
+      align-self: end;
+      padding: 1.4rem;
+      background: var(--soft);
+      border-left: 4px solid var(--navy);
+    }
+
+    .contact-card h2 {
+      margin: 0 0 0.85rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .contact-list { margin: 0; padding: 0; list-style: none; }
+    .contact-list li + li { margin-top: 0.45rem; }
+    .contact-list a { overflow-wrap: anywhere; }
+
+    .trajectory {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0;
+      padding: 1rem clamp(2rem, 6vw, 4.75rem);
+      color: var(--muted);
+      background: #fbfcfd;
+      border-bottom: 1px solid var(--line);
+      list-style: none;
+    }
+
+    .trajectory li { display: flex; align-items: center; gap: 0.5rem; }
+    .trajectory li:not(:last-child)::after { content: "/"; color: var(--teal); font-weight: 800; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 290px;
+      gap: clamp(2rem, 5vw, 4.5rem);
+      padding: clamp(2rem, 6vw, 4.75rem);
+    }
+
+    .section + .section { margin-top: 3.2rem; }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0 0 1.5rem;
+      color: var(--navy);
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .section-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+    .summary { max-width: 70ch; font-size: 1.08rem; }
+    .summary p { margin: 0; }
+    .summary p + p { margin-top: 1rem; }
+
+    .career-dashboard {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      padding: clamp(1.4rem, 4vw, 2.2rem);
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(11, 107, 99, 0.96), rgba(23, 74, 106, 0.98)),
+        var(--navy);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .career-dashboard::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: -4rem;
+      bottom: -5rem;
+      width: 13rem;
+      height: 13rem;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2.2rem rgba(255, 255, 255, 0.035), 0 0 0 4.4rem rgba(255, 255, 255, 0.025);
+    }
+
+    .dashboard-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .dashboard-kicker {
+      margin: 0 0 0.4rem;
+      color: #d8eeec;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .dashboard-head h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.6rem, 4vw, 2.25rem);
+      letter-spacing: -0.025em;
+    }
+
+    .verified-badge {
+      flex: none;
+      padding: 0.45rem 0.65rem;
+      color: #17252d;
+      background: var(--signal);
+      font-size: 0.7rem;
+      font-weight: 850;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .metric-card {
+      min-width: 0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .metric-card strong {
+      display: block;
+      color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      line-height: 0.95;
+    }
+
+    .metric-card span {
+      display: block;
+      margin-top: 0.55rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .metric-card small {
+      display: block;
+      margin-top: 0.3rem;
+      color: #d8eeec;
+      line-height: 1.35;
+    }
+
+    .portfolio-panel {
+      margin-top: 1rem;
+      padding: 1rem;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .portfolio-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .portfolio-heading h3 { margin: 0; font-size: 0.95rem; }
+    .portfolio-heading p { margin: 0; color: var(--muted); font-size: 0.8rem; }
+
+    .portfolio-bar {
+      display: flex;
+      overflow: hidden;
+      height: 0.85rem;
+      background: var(--soft);
+      border-radius: 999px;
+    }
+
+    .portfolio-segment { transition: filter 180ms ease, transform 180ms ease; }
+    .portfolio-segment.insurance { width: 42.857%; background: var(--teal); }
+    .portfolio-segment.real-estate { width: 28.571%; background: var(--navy); }
+    .portfolio-segment.microfinance { width: 14.286%; background: var(--signal); }
+    .portfolio-segment.budget { width: 14.286%; background: #8ca2ad; }
+
+    .portfolio-legend {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.45rem 1rem;
+      margin: 0.9rem 0 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.82rem;
+    }
+
+    .portfolio-legend li { display: flex; align-items: center; gap: 0.45rem; }
+    .portfolio-legend strong { margin-left: auto; }
+
+    .legend-dot {
+      flex: none;
+      width: 0.65rem;
+      height: 0.65rem;
+      background: var(--teal);
+      border-radius: 50%;
+    }
+
+    .legend-dot.real-estate { background: var(--navy); }
+    .legend-dot.microfinance { background: var(--signal); }
+    .legend-dot.budget { background: #8ca2ad; }
+
+    .metric-note {
+      margin: 0.9rem 0 0;
+      padding-top: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 0.76rem;
+    }
+
+    .experience { position: relative; padding-left: 1.35rem; border-left: 2px solid var(--line); }
+    .job { position: relative; padding: 0 0 2rem 1.35rem; }
+    .job:last-child { padding-bottom: 0; }
+    .job::before {
+      content: "";
+      position: absolute;
+      top: 0.25rem;
+      left: -1.75rem;
+      width: 0.72rem;
+      height: 0.72rem;
+      background: var(--surface);
+      border: 3px solid var(--teal);
+      border-radius: 50%;
+      transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    }
+
+    .job h3 {
+      display: inline;
+      margin: 0;
+      color: var(--ink);
+      background-image: linear-gradient(var(--teal), var(--teal));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 0 2px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      transition: color 180ms ease, background-size 220ms ease;
+    }
+
+    @media (hover: hover) {
+      .metric-card:hover {
+        background: rgba(255, 255, 255, 0.16);
+        border-color: rgba(255, 255, 255, 0.55);
+        transform: translateY(-3px);
+      }
+
+      .portfolio-panel:hover .portfolio-segment { filter: saturate(1.12); }
+
+      .job:hover::before {
+        background: var(--teal);
+        box-shadow: 0 0 0 6px rgba(11, 107, 99, 0.14), 0 0 18px rgba(11, 107, 99, 0.34);
+        transform: scale(1.12);
+      }
+
+      .job:hover h3 {
+        color: var(--teal);
+        background-size: 100% 2px;
+      }
+    }
+    .company { margin: 0.25rem 0 0; color: var(--navy); font-weight: 750; }
+    .dates { margin: 0.25rem 0 0.7rem; color: var(--muted); font-size: 0.92rem; }
+    .job ul, .skills { margin: 0; padding-left: 1.15rem; }
+    .job li + li, .skills li + li { margin-top: 0.45rem; }
+
+    aside { padding-left: 1.6rem; border-left: 1px solid var(--line); }
+    .aside-section + .aside-section { margin-top: 2.4rem; }
+    .aside-section h2 { margin: 0 0 0.9rem; color: var(--navy); font-size: 0.95rem; letter-spacing: 0.11em; text-transform: uppercase; }
+    .aside-section h3 { margin: 1rem 0 0.2rem; font-size: 1rem; }
+    .aside-section p { margin: 0; color: var(--muted); }
+
+    footer {
+      padding: 1.4rem clamp(2rem, 6vw, 4.75rem);
+      color: var(--muted);
+      background: var(--soft);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 780px) {
+      .cv { width: 100%; margin: 0; box-shadow: none; }
+      .hero, .layout { grid-template-columns: 1fr; }
+      .contact-card { align-self: auto; }
+      aside { padding: 2rem 0 0; border-top: 1px solid var(--line); border-left: 0; }
+      h1 { max-width: 11ch; }
+    }
+
+    @media (max-width: 420px) {
+      body { font-size: 0.96rem; }
+      .hero, .layout { padding: 1.5rem; }
+      .trajectory { padding: 1rem 1.5rem; }
+      .trajectory li:not(:last-child)::after { content: "/"; }
+      .experience { padding-left: 0.85rem; }
+      .job { padding-left: 1rem; }
+      .job::before { left: -1.27rem; }
+      .dashboard-head, .portfolio-heading { display: block; }
+      .verified-badge { display: inline-block; margin-top: 0.8rem; }
+      .metric-grid, .portfolio-legend { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .job::before, .job h3, .metric-card, .portfolio-segment { transition: none; }
+    }
+
+    @media (forced-colors: active) {
+      .cv, .contact-card, .career-dashboard, .metric-card, .portfolio-panel, footer { border: 1px solid CanvasText; }
+      .job::before { forced-color-adjust: auto; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 14mm; }
+      body { background: #fff; font-size: 9.2pt; line-height: 1.42; }
+      .skip-link, .trajectory { display: none; }
+      .cv { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .hero { grid-template-columns: 1.6fr 0.8fr; padding: 0 0 7mm; }
+      h1 { font-size: 30pt; }
+      .role { font-size: 12pt; }
+      .layout { grid-template-columns: minmax(0, 1fr) 56mm; gap: 9mm; padding: 8mm 0 0; }
+      .section + .section { margin-top: 7mm; }
+      .career-dashboard { color: #000; background: #fff; border: 1px solid #999; }
+      .career-dashboard::after { display: none; }
+      .dashboard-kicker, .metric-card small { color: #333; }
+      .verified-badge { color: #000; background: #eee; border: 1px solid #999; }
+      .metric-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .metric-card { color: #000; background: #fff; border: 1px solid #bbb; }
+      .metric-card strong { color: #000; font-size: 20pt; }
+      .portfolio-panel { border: 1px solid #bbb; }
+      .job { break-inside: avoid; padding-bottom: 4mm; }
+      .job h3 { font-size: 11.5pt; }
+      aside { padding-left: 5mm; }
+      footer { display: none; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <article class="cv" aria-labelledby="nombre">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Venta consultiva · Seguros · Desarrollo de negocio</p>
+        <h1 id="nombre">Johnny Nicolaz</h1>
+        <p class="role">Ejecutivo comercial especializado en seguros y gestión de clientes</p>
+      </div>
+      <section class="contact-card" aria-labelledby="contacto">
+        <h2 id="contacto">Contacto</h2>
+        <ul class="contact-list">
+          <li>Castellanos de Moriscos, Salamanca</li>
+          <li><a href="tel:+34641735125">(+34) 641 735 125</a></li>
+          <li><a href="mailto:nicolazjohnny1925@gmail.com">nicolazjohnny1925<wbr>@gmail.com</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <ul class="trajectory" aria-label="Ámbitos de experiencia">
+      <li>Seguros</li>
+      <li>Inmobiliario</li>
+      <li>Microfinanzas</li>
+      <li>Presupuesto público</li>
+    </ul>
+
+    <div class="layout" id="contenido">
+      <main>
+        <section class="section summary" aria-labelledby="perfil">
+          <h2 class="section-title" id="perfil">Perfil profesional</h2>
+          <p>Economista con MBA y más de 15 años de trayectoria en venta consultiva, seguros, gestión de clientes, intermediación inmobiliaria, microfinanzas y análisis presupuestario.</p>
+          <p>Combino capacidad analítica y orientación comercial para identificar necesidades, explicar alternativas con claridad y acompañar cada operación hasta su cierre o renovación. Experiencia con objetivos, CRM, agenda comercial y atención presencial y telefónica.</p>
+        </section>
+
+        <section class="section career-dashboard" aria-labelledby="panel-trayectoria">
+          <div class="dashboard-head">
+            <div>
+              <p class="dashboard-kicker">Lectura ejecutiva</p>
+              <h2 id="panel-trayectoria">Panel de trayectoria</h2>
+            </div>
+            <span class="verified-badge">Datos verificados del CV</span>
+          </div>
+
+          <div class="metric-grid" aria-label="Indicadores de trayectoria profesional">
+            <div class="metric-card">
+              <strong>15+</strong>
+              <span>Años de trayectoria</span>
+              <small>Experiencia documentada desde 2006</small>
+            </div>
+            <div class="metric-card">
+              <strong>7</strong>
+              <span>Experiencias profesionales</span>
+              <small>Etapas descritas y fechadas en el CV</small>
+            </div>
+            <div class="metric-card">
+              <strong>4</strong>
+              <span>Ámbitos conectados</span>
+              <small>Seguros, inmobiliario, microfinanzas y presupuesto</small>
+            </div>
+            <div class="metric-card">
+              <strong>2</strong>
+              <span>Titulaciones superiores</span>
+              <small>Economía y MBA en Dirección de Empresas</small>
+            </div>
+          </div>
+
+          <div class="portfolio-panel">
+            <div class="portfolio-heading">
+              <h3>Distribución de experiencias por ámbito</h3>
+              <p>7 experiencias documentadas</p>
+            </div>
+            <div class="portfolio-bar" role="img" aria-label="De siete experiencias profesionales, tres corresponden a seguros, dos al sector inmobiliario, una a microfinanzas y una a presupuesto público">
+              <span class="portfolio-segment insurance"></span>
+              <span class="portfolio-segment real-estate"></span>
+              <span class="portfolio-segment microfinance"></span>
+              <span class="portfolio-segment budget"></span>
+            </div>
+            <ul class="portfolio-legend">
+              <li><span class="legend-dot"></span>Seguros <strong>3</strong></li>
+              <li><span class="legend-dot real-estate"></span>Inmobiliario <strong>2</strong></li>
+              <li><span class="legend-dot microfinance"></span>Microfinanzas <strong>1</strong></li>
+              <li><span class="legend-dot budget"></span>Presupuesto público <strong>1</strong></li>
+            </ul>
+            <p class="metric-note">Indicadores derivados únicamente de fechas, estudios y puestos incluidos en este CV. No representan resultados de ventas ni impacto comercial no confirmado.</p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="experiencia">
+          <h2 class="section-title" id="experiencia">Experiencia</h2>
+          <div class="experience">
+            <section class="job">
+              <h3>Agente comercial de seguros</h3>
+              <p class="company">Seguros El Corte Inglés</p>
+              <p class="dates"><time datetime="2026-05">Mayo de 2026</time> – <time datetime="2026-07">julio de 2026</time></p>
+              <ul>
+                <li>Asesoramiento presencial y telefónico, identificando necesidades y proponiendo coberturas adecuadas.</li>
+                <li>Cotización y tramitación de pólizas de hogar, autos, salud, vida, decesos y accidentes.</li>
+                <li>Gestión de citas, presupuestos, oportunidades y seguimiento de clientes potenciales.</li>
+                <li>Atención de consultas y renovaciones con foco en fidelización y retención.</li>
+              </ul>
+            </section>
+
+            <section class="job">
+              <h3>Agente comercial de seguros profesional</h3>
+              <p class="company">MAPFRE</p>
+              <p class="dates"><time datetime="2023-03">Marzo de 2023</time> – <time datetime="2026-03">marzo de 2026</time></p>
+              <ul>
+                <li>Planificación de actividad comercial y seguimiento de objetivos, oportunidades y cartera.</li>
+                <li>Gestión de leads, prospección, visitas y acciones para captar y desarrollar clientes.</li>
+                <li>Elaboración y presentación de ofertas, negociación y acompañamiento hasta el cierre.</li>
+                <li>Registro en CRM y reporte de resultados, planes y acciones de mejora.</li>
+              </ul>
+            </section>
+
+            <section class="job">
+              <h3>Asesor inmobiliario</h3>
+              <p class="company">RE/MAX Urbe Neohouse</p>
+              <p class="dates"><time datetime="2022-06">Junio de 2022</time> – <time datetime="2022-09">septiembre de 2022</time></p>
+              <ul>
+                <li>Captación de propiedades y clientes para operaciones de compraventa.</li>
+                <li>Coordinación y seguimiento entre compradores, vendedores y entidades bancarias.</li>
+              </ul>
+            </section>
+
+            <section class="job">
+              <h3>Asesor inmobiliario</h3>
+              <p class="company">Sinergia Inmobiliaria</p>
+              <p class="dates"><time datetime="2017-11">Noviembre de 2017</time> – <time datetime="2021-06">junio de 2021</time></p>
+              <ul>
+                <li>Gestión de captación, promoción y comercialización de propiedades.</li>
+                <li>Participación en el plan de negocio, posicionamiento de marca y rentabilización del catálogo.</li>
+              </ul>
+            </section>
+
+            <section class="job">
+              <h3>Ejecutivo y asesor de seguros</h3>
+              <p class="company">Amoya Asesores de Seguros</p>
+              <p class="dates"><time datetime="2011-10">Octubre de 2011</time> – <time datetime="2016-07">julio de 2016</time></p>
+              <ul>
+                <li>Captación y asesoramiento de clientes particulares y empresas.</li>
+                <li>Cotización, suscripción, emisión, cobranza, modificaciones y renovaciones.</li>
+                <li>Acompañamiento ante siniestros e incidencias hasta su resolución.</li>
+              </ul>
+            </section>
+
+            <section class="job">
+              <h3>Asesor de microcréditos</h3>
+              <p class="company">Banca Comunitaria Banesco</p>
+              <p class="dates"><time datetime="2009-11">Noviembre de 2009</time> – <time datetime="2010-11">noviembre de 2010</time></p>
+              <ul>
+                <li>Evaluación de proyectos de inversión de microempresarios con acceso limitado a servicios bancarios.</li>
+                <li>Orientación financiera durante la preparación y evaluación de iniciativas.</li>
+              </ul>
+            </section>
+
+            <section class="job">
+              <h3>Analista central de presupuesto</h3>
+              <p class="company">Gobernación del Estado Carabobo</p>
+              <p class="dates"><time datetime="2006-01">Enero de 2006</time> – <time datetime="2009-06">junio de 2009</time></p>
+              <ul>
+                <li>Análisis de presupuestos y planes de inversión para obras públicas.</li>
+                <li>Seguimiento presupuestario de obras en ejecución y procesos de finiquito.</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <aside aria-label="Competencias y formación">
+        <section class="aside-section">
+          <h2>Competencias</h2>
+          <ul class="skills">
+            <li>Venta consultiva y prospección</li>
+            <li>Captación, fidelización y retención</li>
+            <li>Negociación y cierre</li>
+            <li>Gestión de leads, cartera y CRM</li>
+            <li>Cotización y emisión de pólizas</li>
+            <li>Intermediación inmobiliaria</li>
+            <li>Análisis financiero y presupuestario</li>
+            <li>Atención y orientación al cliente</li>
+          </ul>
+        </section>
+
+        <section class="aside-section">
+          <h2>Formación</h2>
+          <h3>MBA, Dirección de Empresas</h3>
+          <p>Universidad Europea de Madrid<br>2021 – 2022</p>
+          <h3>Economista</h3>
+          <p>Universidad de Carabobo<br>1999 – 2005</p>
+          <h3>Inglés gramatical y comunicación</h3>
+          <p>Fundación Universidad de Carabobo<br>1997 – 1998</p>
+        </section>
+
+        <section class="aside-section">
+          <h2>Idiomas</h2>
+          <h3>Español</h3>
+          <p>Nativo</p>
+          <h3>Inglés</h3>
+          <p>Comprensión lectora, escritura y comunicación</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>Currículum actualizado en agosto de 2026.</footer>
+  </article>
+</body>
+</html>
+
