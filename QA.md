@@ -1,7 +1,7 @@
 # QA del CV público
 
 `QA_LOCAL_VERDICT: pass`  
-`QA_PUBLICATION_VERDICT: pending`
+`QA_PUBLICATION_VERDICT: pass`
 
 ## Revisión local 2026-08-20
 
@@ -21,14 +21,24 @@
 
 ## Gate después de publicar
 
-- [ ] La URL de GitHub Pages responde correctamente.
-- [ ] El `title`, la descripción y la URL canónica son correctos.
-- [ ] Se ve una sola copia del CV.
-- [ ] El dashboard conserva su alineación en escritorio.
-- [ ] A 360 px no existe desplazamiento horizontal.
-- [ ] El final termina después del pie del CV, sin contenido duplicado.
-- [ ] Teléfono y correo conservan sus enlaces.
-- [ ] La consola pública no presenta errores.
+- [x] La URL de GitHub Pages responde correctamente.
+- [x] El `title`, la descripción y la URL canónica son correctos.
+- [x] Se ve una sola copia del CV.
+- [x] El dashboard conserva su alineación en escritorio.
+- [x] A 360 px no existe desplazamiento horizontal.
+- [x] El final termina después del pie del CV, sin contenido duplicado.
+- [x] Teléfono y correo conservan sus enlaces.
+- [x] La consola pública no presenta errores.
 
-`QA_VERDICT` no puede ser `pass` hasta completar también el gate de la URL publicada.
+## Evidencia pública 2026-08-20
+
+- URL: <https://proselcommalaga.github.io/johnny-nicolaz-cv/>
+- Respuesta HTTP: `200`.
+- Archivos `index.html`, `README.md` y `QA.md`: contenido normalizado idéntico al local antes de este cierre de QA.
+- Edge escritorio: ancho de contenido `1897 px`, sin desbordamiento horizontal.
+- Edge móvil: viewport `360 px`, ancho útil `345 px`, una columna y sin desbordamiento horizontal.
+- Estructura pública: un `article.cv`, un `h1`, un dashboard, cuatro tarjetas métricas, siete experiencias y un pie.
+- Consola pública: sin errores ni advertencias.
+
+`QA_VERDICT: pass`
 
