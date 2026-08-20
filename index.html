@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Currículum profesional de Johnny Alexander Nicolaz Rodríguez, ejecutivo comercial especializado en seguros, desarrollo de negocio y gestión de clientes.">
+  <meta name="description" content="Currículum profesional de Johnny Nicolaz, ejecutivo comercial especializado en seguros, gestión de clientes y análisis económico.">
   <meta name="theme-color" content="#0b6b63">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Johnny Nicolaz | Ejecutivo comercial de seguros">
-  <meta property="og:description" content="Economista con MBA y más de 15 años de trayectoria en seguros, venta consultiva, gestión de clientes y desarrollo de negocio.">
-  <link rel="canonical" href="https://proselcommalaga.github.io/johnny-nicolaz-cv/">
-  <title>Johnny Nicolaz | Ejecutivo comercial de seguros</title>
+  <meta property="og:title" content="Johnny Nicolaz | Ejecutivo comercial y economista">
+  <meta property="og:description" content="Experiencia en venta consultiva, seguros, gestión de cartera, intermediación inmobiliaria y análisis económico.">
+  <meta name="robots" content="index, follow">
+  <title>Johnny Nicolaz | Ejecutivo comercial y economista</title>
   <style>
     :root {
       --ink: #17252d;
@@ -328,7 +328,7 @@
       content: "";
       position: absolute;
       top: 0.25rem;
-      left: -1.75rem;
+      left: calc(-1.35rem - 0.36rem - 4px);
       width: 0.72rem;
       height: 0.72rem;
       background: var(--surface);
@@ -388,10 +388,174 @@
       font-size: 0.9rem;
     }
 
+    .cv-toolbar {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 1rem auto -0.5rem;
+      padding: 0;
+      color: var(--ink);
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .cv-toolbar__content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1.2rem;
+    }
+
+    .cv-toolbar p { margin: 0.25rem 0 0; max-width: 72ch; }
+    .cv-toolbar strong { font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; }
+
+    .cv-actions {
+      display: flex;
+      flex: none;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .cv-action {
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: #fff;
+      background: var(--navy);
+      border: 2px solid var(--navy);
+      border-radius: 2px;
+      font: inherit;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .cv-action--secondary { color: var(--navy); background: #fff; }
+    .cv-action:hover { color: #fff; background: var(--teal); border-color: var(--teal); }
+    .cv-action--secondary:hover { color: #fff; }
+
+    .reference-lab {
+      padding: clamp(1.4rem, 4vw, 2.2rem);
+      background: linear-gradient(180deg, #f5f9fa, #fff);
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--signal);
+    }
+
+    .reference-intro { margin: -0.5rem 0 1.4rem; color: var(--muted); }
+
+    .reference-status {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.55rem;
+      color: #3b2a08;
+      background: #fff0bd;
+      border: 1px solid #c48b16;
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .reference-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .reference-card {
+      min-width: 0;
+      padding: 1.1rem;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 20px rgba(23, 74, 106, 0.06);
+    }
+
+    .reference-card h3 {
+      margin: 0 0 0.65rem;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.15rem;
+    }
+
+    .reference-card p { margin: 0; color: var(--muted); }
+    .reference-card p + p { margin-top: 0.7rem; }
+    .reference-card ul { margin: 0.75rem 0 0; padding-left: 1.15rem; }
+    .reference-card li + li { margin-top: 0.45rem; }
+
+    .reference-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 0.8rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .reference-tags li {
+      padding: 0.28rem 0.5rem;
+      color: var(--navy);
+      background: var(--soft);
+      border: 1px solid var(--line);
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .opportunity-dashboard {
+      margin-top: 1rem;
+      padding: 1rem;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .opportunity-dashboard h3 { margin: 0; font-size: 0.95rem; }
+    .opportunity-dashboard > p { margin: 0.25rem 0 0.85rem; color: var(--muted); font-size: 0.8rem; }
+
+    .opportunity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.55rem;
+    }
+
+    .opportunity-item {
+      padding: 0.75rem;
+      background: var(--soft);
+      border-left: 4px solid var(--signal);
+    }
+
+    .opportunity-item strong {
+      display: block;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      line-height: 1;
+    }
+
+    .opportunity-item span { display: block; margin-top: 0.35rem; font-size: 0.76rem; line-height: 1.3; }
+
+    .metric-placeholders {
+      margin-top: 1rem;
+      padding: 1.1rem;
+      background: #fffaf0;
+      border: 1px dashed #b77b09;
+    }
+
+    .metric-placeholders h3 { margin: 0 0 0.75rem; color: #3b2a08; font-size: 1rem; }
+    .metric-placeholders dl {
+      display: grid;
+      grid-template-columns: minmax(130px, 0.75fr) minmax(0, 1.25fr);
+      gap: 0.45rem 1rem;
+      margin: 0;
+    }
+    .metric-placeholders dt { font-weight: 800; }
+    .metric-placeholders dd { margin: 0; color: var(--muted); }
+
     @media (max-width: 780px) {
       .cv { width: 100%; margin: 0; box-shadow: none; }
       .hero, .layout { grid-template-columns: 1fr; }
       .contact-card { align-self: auto; }
+      .cv-toolbar__content { display: block; }
+      .cv-actions { margin-top: 0.9rem; }
+      .reference-grid { grid-template-columns: 1fr; }
+      .opportunity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       aside { padding: 2rem 0 0; border-top: 1px solid var(--line); border-left: 0; }
       h1 { max-width: 11ch; }
     }
@@ -403,10 +567,13 @@
       .trajectory li:not(:last-child)::after { content: "/"; }
       .experience { padding-left: 0.85rem; }
       .job { padding-left: 1rem; }
-      .job::before { left: -1.27rem; }
+      .job::before { left: calc(-0.85rem - 0.36rem - 4px); }
       .dashboard-head, .portfolio-heading { display: block; }
       .verified-badge { display: inline-block; margin-top: 0.8rem; }
-      .metric-grid, .portfolio-legend { grid-template-columns: 1fr; }
+      .metric-grid, .portfolio-legend, .opportunity-grid { grid-template-columns: 1fr; }
+      .cv-toolbar { width: 100%; margin: 0; border-right: 0; border-left: 0; }
+      .metric-placeholders dl { grid-template-columns: 1fr; gap: 0.1rem; }
+      .metric-placeholders dd + dt { margin-top: 0.55rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -422,12 +589,14 @@
     @media print {
       @page { size: A4; margin: 14mm; }
       body { background: #fff; font-size: 9.2pt; line-height: 1.42; }
-      .skip-link, .trajectory { display: none; }
+      .skip-link, .trajectory, .cv-toolbar { display: none; }
+      .cv-toolbar__content { display: block; }
+      .reference-card, .metric-placeholders { break-inside: avoid; box-shadow: none; }
       .cv { width: 100%; margin: 0; border: 0; box-shadow: none; }
       .hero { grid-template-columns: 1.6fr 0.8fr; padding: 0 0 7mm; }
       h1 { font-size: 30pt; }
       .role { font-size: 12pt; }
-      .layout { grid-template-columns: minmax(0, 1fr) 56mm; gap: 9mm; padding: 8mm 0 0; }
+      .layout { display: block; padding: 8mm 0 0; }
       .section + .section { margin-top: 7mm; }
       .career-dashboard { color: #000; background: #fff; border: 1px solid #999; }
       .career-dashboard::after { display: none; }
@@ -437,9 +606,20 @@
       .metric-card { color: #000; background: #fff; border: 1px solid #bbb; }
       .metric-card strong { color: #000; font-size: 20pt; }
       .portfolio-panel { border: 1px solid #bbb; }
+      .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .job { break-inside: avoid; padding-bottom: 4mm; }
       .job h3 { font-size: 11.5pt; }
-      aside { padding-left: 5mm; }
+      aside {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8mm;
+        margin-top: 9mm;
+        padding: 7mm 0 0;
+        border-top: 1px solid #bbb;
+        border-left: 0;
+        break-inside: avoid;
+      }
+      .aside-section + .aside-section { margin-top: 0; }
       footer { display: none; }
       a { color: inherit; text-decoration: none; }
     }
@@ -447,6 +627,15 @@
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <aside class="cv-toolbar" aria-label="Acciones del currículum">
+    <div class="cv-toolbar__content">
+      <div class="cv-actions" aria-label="Descarga e impresión">
+        <a class="cv-action" href="johnny-nicolaz-cv.pdf" download>Descargar PDF</a>
+        <button class="cv-action cv-action--secondary" type="button" onclick="window.print()">Imprimir o guardar como PDF</button>
+      </div>
+    </div>
+  </aside>
+
   <article class="cv" aria-labelledby="nombre">
     <header class="hero">
       <div>
@@ -529,6 +718,104 @@
               <li><span class="legend-dot budget"></span>Presupuesto público <strong>1</strong></li>
             </ul>
             <p class="metric-note">Indicadores derivados únicamente de fechas, estudios y puestos incluidos en este CV. No representan resultados de ventas ni impacto comercial no confirmado.</p>
+          </div>
+
+          <div class="opportunity-dashboard" aria-labelledby="mapa-oportunidad">
+            <h3 id="mapa-oportunidad">Competencias estratégicas</h3>
+            <p>Áreas que refuerzan el posicionamiento comercial, analítico y operativo.</p>
+            <div class="opportunity-grid">
+              <div class="opportunity-item"><strong>3</strong><span>perfiles profesionales objetivo</span></div>
+              <div class="opportunity-item"><strong>7</strong><span>herramientas de análisis y gestión</span></div>
+              <div class="opportunity-item"><strong>4</strong><span>prácticas ágiles de referencia</span></div>
+              <div class="opportunity-item"><strong>5</strong><span>usos profesionales de IA</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reference-lab" aria-labelledby="perfil-ideal">
+          <span class="reference-status">Especialización y posicionamiento</span>
+          <h2 class="section-title" id="perfil-ideal">Perfil profesional ampliado</h2>
+          <p class="reference-intro">Perfil orientado a venta consultiva, seguros, gestión de cartera, análisis económico y mejora de operaciones.</p>
+
+          <div class="reference-grid">
+            <div class="reference-card">
+              <h3>Puestos objetivo compatibles</h3>
+              <ul>
+                <li>Ejecutivo comercial de seguros y desarrollo de negocio.</li>
+                <li>Gestor de cartera, fidelización y renovaciones.</li>
+                <li>Analista comercial y de operaciones con base económica.</li>
+              </ul>
+              <p>Conviene elegir una familia por versión ATS y adaptar titular, extracto y primeras competencias.</p>
+            </div>
+
+            <div class="reference-card">
+              <h3>Economía, datos y gestión</h3>
+              <p>Herramientas relevantes para análisis, reporting y gestión comercial:</p>
+              <ul class="reference-tags" aria-label="Herramientas económicas y de datos sugeridas">
+                <li>Excel avanzado</li>
+                <li>Power Query</li>
+                <li>Power BI</li>
+                <li>CRM</li>
+                <li>SAP o ERP</li>
+                <li>Google Sheets</li>
+                <li>Microsoft 365</li>
+              </ul>
+              <p>Aplicación profesional: elaboración de reportes de cartera y seguimiento de objetivos mediante tablas dinámicas y paneles.</p>
+            </div>
+
+            <div class="reference-card">
+              <h3>Proyectos y metodologías ágiles</h3>
+              <ul class="reference-tags" aria-label="Herramientas y metodologías ágiles sugeridas">
+                <li>Jira</li>
+                <li>Trello</li>
+                <li>Asana</li>
+                <li>Microsoft Project</li>
+                <li>Kanban</li>
+                <li>Scrum</li>
+                <li>Lean</li>
+                <li>OKR</li>
+              </ul>
+              <p>Aplicación profesional: priorización de tareas, visualización del trabajo, coordinación de entregas, revisión de bloqueos y seguimiento de objetivos.</p>
+            </div>
+
+            <div class="reference-card">
+              <h3>IA aplicada al trabajo</h3>
+              <p>Usos profesionales para acelerar el análisis, la preparación comercial y el seguimiento:</p>
+              <ul>
+                <li>Comparar coberturas, condiciones o propuestas mediante una matriz inicial revisada por una persona.</li>
+                <li>Preparar borradores de seguimiento comercial, preguntas frecuentes y guiones de llamada.</li>
+                <li>Limpiar y clasificar exportaciones de CRM o Excel para priorizar oportunidades.</li>
+                <li>Resumir reuniones y convertirlas en próximas acciones verificables.</li>
+                <li>Practicar objeciones, negociación y entrevistas mediante role-play.</li>
+              </ul>
+              <p>Herramientas: ChatGPT, Microsoft Copilot y Gemini.</p>
+            </div>
+
+            <div class="reference-card">
+              <h3>Palabras clave ATS por familia</h3>
+              <p><strong>Seguros:</strong> venta consultiva, pólizas, cotización, emisión, renovaciones, retención, siniestros y cartera.</p>
+              <p><strong>Comercial:</strong> CRM, pipeline, leads, prospección, negociación, cierre, fidelización, cross-selling y KPI.</p>
+              <p><strong>Economía y operaciones:</strong> análisis presupuestario, proyectos de inversión, reporting, Excel, Power BI y mejora de procesos.</p>
+            </div>
+
+            <div class="reference-card">
+              <h3>Cómo convertir tareas en logros</h3>
+              <p>Estructura recomendada: contexto + acción propia + resultado.</p>
+              <p>“Gestioné una cartera de [número] clientes, prioricé renovaciones con [herramienta] y contribuí a mantener una tasa de retención de [porcentaje] durante [periodo]”.</p>
+              <p>Campos preparados para incorporar los resultados y cifras de negocio de Johnny.</p>
+            </div>
+          </div>
+
+          <div class="metric-placeholders">
+            <h3>Indicadores de impacto profesional</h3>
+            <dl>
+              <dt>Cartera gestionada</dt><dd>€[importe] en primas, presupuesto o volumen comercial.</dd>
+              <dt>Alcance</dt><dd>[número] clientes activos, cuentas, proyectos u obras.</dd>
+              <dt>Objetivos</dt><dd>[porcentaje] de cumplimiento en [periodo].</dd>
+              <dt>Retención</dt><dd>[porcentaje] de renovaciones o permanencia de cartera.</dd>
+              <dt>Actividad</dt><dd>[número] propuestas, visitas, pólizas o seguimientos por mes.</dd>
+              <dt>Eficiencia</dt><dd>[tiempo o porcentaje] de mejora con un proceso, herramienta o automatización.</dd>
+            </dl>
           </div>
         </section>
 
@@ -648,8 +935,7 @@
       </aside>
     </div>
 
-    <footer>Currículum actualizado en agosto de 2026.</footer>
+    <footer>Currículum profesional de Johnny Nicolaz · Actualizado en agosto de 2026.</footer>
   </article>
 </body>
 </html>
-

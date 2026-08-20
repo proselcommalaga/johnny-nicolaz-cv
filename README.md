@@ -21,6 +21,17 @@ La distribución del gráfico cuenta puestos documentados: seguros `3`, inmobili
 
 La versión pública incluye nombre, localidad, teléfono, correo, experiencia y formación. No incluye la dirección postal completa ni métricas inventadas.
 
+## Perfil profesional ampliado
+
+`index.html` integra el perfil completo: puestos objetivo, herramientas de economía y gestión, metodologías ágiles, usos profesionales de IA, palabras clave ATS e indicadores de impacto editables.
+
+La página incluye dos opciones para obtener una copia en PDF:
+
+- descarga directa de `johnny-nicolaz-cv.pdf`, situado junto a `index.html`;
+- impresión desde el navegador mediante el botón «Imprimir o guardar como PDF».
+
+Los campos entre corchetes se completan con las cifras de cartera, clientes, objetivos, retención, actividad y eficiencia que aporte Johnny.
+
 ## Publicación
 
 Configuración activa de GitHub Pages:
@@ -31,4 +42,3 @@ Configuración activa de GitHub Pages:
 - URL pública: <https://proselcommalaga.github.io/johnny-nicolaz-cv/>.
 
 Antes de publicar o actualizar se debe completar `QA.md` y comprobar la URL pública, no solo la vista local.
-
