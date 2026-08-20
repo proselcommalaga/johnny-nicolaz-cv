@@ -1,6 +1,6 @@
 # CV público de Johnny Nicolaz
 
-Sitio estático del currículum profesional de Johnny Nicolaz, preparado para GitHub Pages.
+Sitio estático del currículum profesional de Johnny Nicolaz, publicado con GitHub Pages.
 
 ## Fuente de verdad
 
@@ -23,12 +23,12 @@ La versión pública incluye nombre, localidad, teléfono, correo, experiencia y
 
 ## Publicación
 
-Configuración prevista para GitHub Pages:
+Configuración activa de GitHub Pages:
 
 - repositorio: `proselcommalaga/johnny-nicolaz-cv`;
 - rama: `main`;
 - origen de Pages: raíz de la rama;
-- URL prevista: `https://proselcommalaga.github.io/johnny-nicolaz-cv/`.
+- URL pública: <https://proselcommalaga.github.io/johnny-nicolaz-cv/>.
 
 Antes de publicar o actualizar se debe completar `QA.md` y comprobar la URL pública, no solo la vista local.
 
