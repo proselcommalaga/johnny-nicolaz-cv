@@ -6,6 +6,9 @@
   <meta name="description" content="Trayectoria profesional de Johnny Nicolaz en seguros, venta consultiva, gestión de cartera y análisis económico.">
   <meta name="author" content="Johnny Nicolaz">
   <title>Johnny Nicolaz · Ejecutivo comercial sénior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
       --ink: #102a43;
@@ -164,13 +167,176 @@
       .education { margin-top: 5mm; }
     }
   </style>
+  <style id="yuli-design-system">
+    :root {
+      --ink: #123735;
+      --ink-soft: #435e5b;
+      --muted: #667a76;
+      --paper: #f7f4ec;
+      --white: #fffdfa;
+      --navy: #153a37;
+      --teal: #0b6661;
+      --teal-dark: #0b4f4b;
+      --amber: #d89c24;
+      --amber-soft: #f3c86a;
+      --coral: #df5841;
+      --sage: #dce4de;
+      --line: #d8d9d2;
+      --shadow: none;
+      --radius: 1.35rem;
+      --max: 1120px;
+    }
+    body {
+      background: var(--paper);
+      font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+    }
+    .skip-link { background: var(--teal-dark); border-radius: .8rem; }
+    .site-header { background: rgba(247,244,236,.96); border-color: var(--line); backdrop-filter: blur(12px); }
+    .nav { min-height: 4.3rem; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); font-size: .84rem; font-weight: 850; text-decoration: none; }
+    .monogram { width: 2.5rem; height: 2.5rem; border-radius: .85rem; background: var(--teal); font-family: inherit; font-size: .82rem; }
+    .nav-links { gap: .5rem; }
+    .nav-links a { padding-inline: .7rem; color: var(--ink); font-size: .82rem; }
+    .nav-links a:hover { background: rgba(11,102,97,.08); }
+    .nav-links .download { padding-inline: 1rem; color: var(--white); background: var(--teal); }
+    .shell { width: min(calc(100% - 2rem), var(--max)); }
+    .section { padding-block: clamp(4.8rem, 9vw, 7.3rem); }
+    .hero { grid-template-columns: minmax(0,1.05fr) minmax(20rem,.95fr); gap: clamp(2rem,6vw,5rem); min-height: 650px; }
+    .eyebrow { color: var(--coral); font-size: .75rem; letter-spacing: .13em; }
+    .eyebrow::before { width: 2.2rem; height: .2rem; background: var(--coral); }
+    h1, h2, .role-body h3, .education-main h3 { font-family: inherit; }
+    h1 { max-width: 9ch; margin-bottom: 1.25rem; font-size: clamp(3.5rem,7vw,6.1rem); line-height: .91; font-weight: 900; letter-spacing: -.07em; }
+    h1 span { color: var(--teal); }
+    .lead { max-width: 57ch; color: var(--ink-soft); font-size: clamp(1rem,1.55vw,1.18rem); }
+    .contact { margin: 1.55rem 0 0 1.35rem; font-size: .88rem; }
+    .actions { margin-top: 1.35rem; }
+    .button { min-height: 3.1rem; padding-inline: 1.35rem; border-color: var(--teal); color: var(--teal-dark); font-size: .88rem; }
+    .button.primary { background: var(--teal); }
+    .portfolio-map { min-height: 458px; padding: 2.2rem; background: var(--teal-dark); border-radius: 1.55rem; }
+    .portfolio-map::before, .portfolio-map::after { display: none; }
+    .map-label { color: #ffd15d; font-size: .75rem; letter-spacing: .1em; }
+    .map-title { margin: 2.3rem 0 1.2rem; font-size: clamp(2.15rem,4vw,3.15rem); line-height: .98; font-weight: 900; }
+    .map-copy { max-width: 34ch; color: #f4fbf8; }
+    .map-key { right: 2.2rem; bottom: 2.2rem; width: calc(100% - 4.4rem); padding-top: 1.1rem; border-top: 1px solid rgba(255,255,255,.2); }
+    .key-dot { width: .65rem; height: .65rem; background: var(--coral); }
+    .key-dot.teal { background: var(--amber); }
+    .section-head { grid-template-columns: minmax(16rem,.9fr) minmax(0,1.1fr); margin-bottom: 2.1rem; }
+    h2 { font-size: clamp(2.25rem,4.6vw,3.85rem); font-weight: 900; letter-spacing: -.06em; }
+    .section-intro { color: var(--ink-soft); }
+    .dashboard { gap: 1rem; }
+    .panel { border-color: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: none; }
+    .metrics { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .metric { border: 0; border-radius: .9rem; background: var(--sage); }
+    .metric:nth-child(1) { color: var(--white); background: var(--teal); }
+    .metric:nth-child(2) { background: var(--amber-soft); }
+    .metric:nth-child(3) { color: var(--white); background: var(--coral); }
+    .metric:nth-child(1) strong, .metric:nth-child(3) strong { color: var(--white); }
+    .metric strong { font-family: inherit; font-weight: 900; }
+    .metric small { color: inherit; opacity: .8; }
+    .bar { height: 1rem; background: #eee8dc; }
+    .bar span { background: var(--teal); }
+    .bar .navy { background: var(--coral); }
+    .bar .amber { background: var(--amber); }
+    .bar .slate { background: #8ba097; }
+    .truth-note { border-color: var(--line); }
+    #experiencia { width: 100%; max-width: none; padding: clamp(5rem,8vw,7rem) max(1rem,calc((100% - var(--max))/2)); color: var(--white); background: var(--navy); }
+    #experiencia .section-intro { color: #d9e8e3; }
+    .experience-list { gap: 1rem; }
+    .experience-card { grid-template-columns: 16rem minmax(0,1fr); gap: 1.4rem; padding: 1.75rem; border-color: rgba(255,255,255,.17); background: rgba(255,255,255,.065); border-radius: var(--radius); box-shadow: none; }
+    .role-meta { border-color: rgba(255,255,255,.18); }
+    .role-date { color: #ffd15d; }
+    .role-sector { color: #a8d2c7; }
+    .role-body h3 { color: var(--white); font-size: 1.3rem; font-weight: 850; }
+    .company { color: #a8d2c7; }
+    .facts { color: #f5faf8; }
+    .role-standard { padding: 1.15rem; border-left-color: var(--coral); border-radius: .75rem; background: rgba(255,255,255,.075); }
+    .role-standard h4 { color: #ffd15d; }
+    .role-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+    .role-item { color: #eef7f4; }
+    .role-item strong { color: var(--white); }
+    .capability-grid { gap: 1rem; }
+    .capability { border-color: var(--line); border-top: .28rem solid var(--teal); background: var(--white); }
+    .capability:nth-child(2) { border-top-color: var(--coral); }
+    .capability:nth-child(3) { border-top-color: var(--amber); }
+    .capability .code { color: var(--teal); font-family: inherit; }
+    .capability:nth-child(2) .code { color: var(--coral); }
+    .capability:nth-child(3) .code { color: #a96f00; }
+    .capability h3 { margin-top: 1.1rem; }
+    .education { margin-top: 3.2rem; }
+    .education-main { background: var(--coral); }
+    .education-main .map-label { color: var(--white); }
+    .education-list { border-color: var(--line); background: var(--white); }
+    .tag { background: #eee8dc; }
+    .contact-panel { display: grid; grid-template-columns: 1fr .95fr; gap: 2rem; align-items: center; margin-top: clamp(4rem,8vw,7rem); padding: clamp(2rem,5vw,3.3rem); color: var(--white); background: var(--teal); border-radius: 1.55rem; }
+    .contact-panel h2 { font-size: clamp(2.2rem,4vw,3.3rem); }
+    .contact-panel p { max-width: 48ch; margin: .8rem 0 0; color: #daf0eb; }
+    .contact-links { display: grid; gap: .65rem; }
+    .contact-links a { padding: 1rem 1.1rem; border: 1px solid rgba(255,255,255,.4); border-radius: .75rem; color: var(--white); font-weight: 800; text-decoration: none; }
+    footer { display: flex; justify-content: space-between; gap: 1rem; width: min(calc(100% - 2rem),var(--max)); margin: 0 auto; padding: 2rem 0 2.5rem; border-top: 1px solid var(--line); text-align: left; }
+    @media (max-width: 960px) {
+      .role-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .experience-card { grid-template-columns: 12rem minmax(0,1fr); }
+    }
+    @media (max-width: 880px) {
+      .nav-links li:not(:last-child):not(:nth-last-child(2)) { display: list-item; }
+      .nav-links { flex-wrap: wrap; justify-content: flex-end; }
+      .hero, .dashboard, .section-head, .education, .contact-panel { grid-template-columns: 1fr; }
+      .hero { padding-top: 4.5rem; }
+    }
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; padding-block: .65rem; }
+      .brand > span:not(.monogram) { display: none; }
+      .nav-links { gap: .1rem; }
+      .nav-links a { min-height: 2.3rem; padding: .35rem .45rem; font-size: .72rem; }
+      .nav-links li:nth-last-child(2) { display: none; }
+      .nav-links .download { padding-inline: .75rem; }
+      .hero { gap: 2.4rem; }
+      h1 { font-size: clamp(3.25rem,17vw,4.8rem); }
+      .portfolio-map { min-height: 0; }
+      .map-key { position: static; width: auto; margin-top: 1.6rem; }
+      .metrics, .role-grid, .capability-grid { grid-template-columns: 1fr; }
+      .experience-card { grid-template-columns: 1fr; padding: 1.2rem; }
+      .role-meta { padding: 0 0 .8rem; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+      footer { display: grid; }
+    }
+    @media print {
+      body { background: #fff; }
+      .contact-panel { display: none; }
+      .print-page { width: 100%; min-height: 210mm; height: 210mm; }
+      .hero { grid-template-columns: 1.05fr .95fr; padding: 12mm 10mm; }
+      .dashboard-page { padding: 10mm; }
+      #experiencia { padding: 0; background: var(--navy); }
+      .experience-list { gap: 0; }
+      .experience-sheet { display: flex; flex-direction: column; gap: 6mm; min-height: 210mm; height: 210mm; padding: 10mm; break-before: auto; break-after: page; page-break-before: auto; page-break-after: always; }
+      .experience-card { flex: 1 1 0; grid-template-columns: 48mm minmax(0,1fr); min-height: 0; padding: 4.5mm; }
+      .experience-sheet:last-child { justify-content: center; }
+      .experience-sheet:last-child .experience-card { flex: 0 0 122mm; align-content: center; }
+      .role-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+      .capability-page { min-height: 210mm; height: 210mm; padding: 8mm 10mm; }
+      .capability-page .section-head { margin-bottom: 4mm; }
+      .capability-page h2 { font-size: 24pt; }
+      .capability-grid { gap: 4mm; }
+      .capability { min-height: 0; padding: 4mm; }
+      .capability h3 { margin: 3mm 0 1.5mm; }
+      .capability p { font-size: 7.5pt; }
+      .education { margin-top: 5mm; gap: 4mm; }
+      .education-main { padding: 5mm; }
+      .education-main h3 { margin: 3mm 0 1mm; font-size: 19pt; }
+      .education-list { gap: 2mm; padding: 4mm; }
+      .education-list p { font-size: 7.5pt; }
+      .tags { margin-top: 2mm; gap: 1.5mm; }
+      .tag { padding: 1.5mm 2mm; font-size: 6.5pt; }
+    }
+    @page { size: A4 landscape; margin: 0; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header"><nav class="nav" aria-label="Navegación principal">
-    <a class="monogram" href="#inicio" aria-label="Ir al inicio">JN</a>
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="monogram">JN</span><span>Johnny Nicolaz</span></a>
     <ul class="nav-links">
-      <li><a href="#trayectoria">Trayectoria</a></li><li><a href="#experiencia">Experiencia</a></li><li><a href="#capacidades">Capacidades</a></li>
+      <li><a href="#trayectoria">Mapa</a></li><li><a href="#experiencia">Trayectoria</a></li><li><a href="#capacidades">Capacidades</a></li>
       <li><a class="download" href="johnny-nicolaz-cv-ats.pdf"><span class="label">PDF </span>ATS</a></li>
       <li><a class="download" href="johnny-nicolaz-cv-planning.pdf"><span class="label">PDF </span>planning</a></li>
     </ul>
@@ -185,13 +351,13 @@
         <div class="actions"><a class="button primary" href="johnny-nicolaz-cv-ats.pdf">Descargar CV ATS</a><a class="button" href="johnny-nicolaz-cv-planning.pdf">Ver trayectoria planning</a></div>
       </div>
       <aside class="portfolio-map" aria-label="Propuesta profesional">
-        <span class="map-label">Mapa de cartera profesional</span><h2 class="map-title">Decisión comercial con criterio económico.</h2>
+        <span class="map-label">Cartera + criterio</span><h2 class="map-title">Decisión comercial con criterio económico.</h2>
         <p class="map-copy">Quince años o más de trayectoria declarada conectando clientes, riesgo, operaciones y seguimiento.</p>
         <div class="map-key"><span class="key-dot"></span><span>Trayectoria demostrable</span><span class="key-dot teal"></span><span>Estándar esperado del nivel</span></div>
       </aside>
     </section>
     <section id="trayectoria" class="section shell print-page dashboard-page" aria-labelledby="titulo-trayectoria">
-      <div class="section-head"><h2 id="titulo-trayectoria">Trayectoria verificable</h2><p class="section-intro">El dashboard describe la composición del currículo; no simula ventas, cartera ni impacto. Los resultados comerciales se incorporarán únicamente cuando Johnny pueda explicarlos y defenderlos.</p></div>
+      <div class="section-head"><h2 id="titulo-trayectoria">Mapa de experiencia</h2><p class="section-intro">Lectura de las siete experiencias del currículo. Los datos representan puestos por ámbito, no porcentajes de rendimiento ni duración acumulada.</p></div>
       <div class="dashboard">
         <div class="panel metrics" aria-label="Indicadores verificables">
           <div class="metric"><strong>15+</strong><span>Años declarados</span><small>Trayectoria profesional</small></div><div class="metric"><strong>7</strong><span>Experiencias</span><small>Con empresa y fechas</small></div>
@@ -206,9 +372,7 @@
       </div>
     </section>
     <section id="experiencia" class="section shell" aria-labelledby="titulo-experiencia">
-      <div class="experience-intro"><div class="section-head"><h2 id="titulo-experiencia">Experiencia y nivel esperado</h2><p class="section-intro">Cada etapa muestra qué hizo Johnny y, en un bloque independiente, el ecosistema profesional que corresponde a una persona de ese nivel: herramientas, IA, método y KPI.</p></div>
-        <div class="truth-grid"><div class="truth-card fact"><strong>Trayectoria demostrable</strong><p>Responsabilidades procedentes del currículo revisado.</p></div><div class="truth-card level"><strong>Ecosistema profesional del nivel</strong><p>Estándar recomendado; no se atribuye como uso histórico.</p></div></div>
-      </div>
+      <div class="experience-intro"><div class="section-head"><h2 id="titulo-experiencia">Trayectoria</h2><p class="section-intro">Cada etapa combina la experiencia demostrable con el ecosistema profesional esperado para este nivel: herramientas actuales, IA, método de trabajo e indicadores.</p></div></div>
       <div class="experience-list">
         <div class="experience-sheet">
           <article class="experience-card"><div class="role-meta"><p class="role-date">May 2026 - Jul 2026</p><span class="role-sector">Seguros · Retail</span></div><div class="role-body">
@@ -252,8 +416,9 @@
       <div class="section-head"><h2 id="titulo-capacidades">Capacidades del nivel</h2><p class="section-intro">El perfil esperado combina relación con clientes, disciplina de pipeline y lectura económica. Las herramientas se seleccionan por situación; no como una lista decorativa.</p></div>
       <div class="capability-grid"><article class="capability"><span class="code">01 · CLIENTE</span><h3>Venta consultiva</h3><p>Descubrimiento de necesidades, explicación de alternativas, negociación, cierre y seguimiento.</p></article><article class="capability"><span class="code">02 · CARTERA</span><h3>Pipeline y renovaciones</h3><p>Segmentación, cadencias, forecast, retención, venta cruzada y trazabilidad de oportunidades.</p></article><article class="capability"><span class="code">03 · ANÁLISIS</span><h3>Criterio económico</h3><p>Presupuesto, riesgo, escenarios, indicadores y decisiones apoyadas en evidencia.</p></article></div>
       <div class="education"><div class="education-main"><span class="map-label">Formación superior</span><h3>Máster Universitario en Dirección de Empresas</h3><p>Universidad Europea de Madrid · 2021-2022</p></div><div class="education-list"><p><strong>Economista</strong><br>Universidad de Carabobo · 1999-2005</p><p><strong>Inglés gramatical y comunicación</strong><br>Fundación Universidad de Carabobo · 1997-1998</p><div class="tags"><span class="tag">CRM</span><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">Power BI</span><span class="tag">Pipeline</span><span class="tag">Forecast</span><span class="tag">Kanban</span><span class="tag">OKR</span><span class="tag">IA con revisión humana</span></div></div></div>
+      <aside class="contact-panel" aria-label="Contacto y descarga"><div><span class="map-label">Contacto</span><h2>Conversemos.</h2><p>Johnny Nicolaz · perfil comercial sénior disponible para procesos de selección.</p></div><div class="contact-links"><a href="mailto:contacto@johnnynicolaz.test">contacto@johnnynicolaz.test</a><a href="johnny-nicolaz-cv-planning.pdf">Descargar resumen planning</a></div></aside>
     </section>
   </main>
-  <footer>Johnny Nicolaz · Actualizado el 21 de agosto de 2026 · Contacto público ficticio no operativo</footer>
+  <footer><span>Johnny Nicolaz</span><span>Actualizado el 21 de agosto de 2026</span></footer>
 </body>
 </html>
